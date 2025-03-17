@@ -14,7 +14,7 @@ function formatDate(date, fromFormat, toFormat) {
   const dateMap = {};
 
   for (let i = 0; i < fromFormatCopy.length; i++) {
-    dateMap[fromFormat[i]] = parts[i];
+    dateMap[fromFormatCopy[i]] = parts[i];
   }
 
   if ('YY' in dateMap && !('YYYY' in dateMap)) {
