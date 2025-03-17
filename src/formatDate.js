@@ -13,7 +13,7 @@ function formatDate(date, fromFormat, toFormat) {
   const parts = date.split(oldSeparator);
   const dateMap = {};
 
-  for (let i = 0; i < fromFormat.length; i++) {
+  for (let i = 0; i < fromFormatCopy.length; i++) {
     dateMap[fromFormat[i]] = parts[i];
   }
 
